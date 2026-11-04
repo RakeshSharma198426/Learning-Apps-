@@ -1,0 +1,40 @@
+.dashboard {
+  flex: 1;
+  padding-left: 20px;
+  padding-right: 72px;
+  background-color: var(--color-secondary);
+}
+
+.tabs {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+
+  button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #d6d6d6;
+    background-color: white;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: "Montserrat", helvetica;
+  }
+
+  button.active {
+    background-color: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+  }
+}
+
+.recent-jobs-container {
+  margin: 45px 0;
+
+  .recent-jobs-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+}

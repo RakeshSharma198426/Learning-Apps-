@@ -1,0 +1,39 @@
+.job-table {
+    @mixin table-header-text {
+        font-family: "Montserrat", helvetica;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0;
+    }
+
+    &-title {
+        background-color: #CBDDF5;
+
+    }
+
+    &-header {
+        @include table-header-text();
+        color: #000000;
+    }
+
+    &-body {
+        background-color: #EFF4FF;
+
+        &-jobId {
+            color: #101828;
+            @include table-header-text();
+        }
+
+        &-cell-details {
+            @include table-header-text();
+            color: #494949;
+        }
+
+        &-view-details {
+            @include table-header-text();
+            color: #000000;
+            text-decoration: underline;
+        }
+    }
+}

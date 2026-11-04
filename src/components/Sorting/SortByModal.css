@@ -1,0 +1,53 @@
+.sort-by-container {
+  position: relative;
+  display: inline-block;
+}
+
+.sort-by-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.sort-arrow-icon {
+  width: 14px;
+  height: 28px;
+  margin-right: 6px;
+}
+
+.sort-by-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-right: 8px;
+  width: 306px;
+  height: 130px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #d9d9d9;
+}
+
+.sort-by-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  margin-top: 5px;
+  color: #555555;
+}
+
+.sort-by-option {
+  display: block;
+  width: 100%;
+  padding: 13px 0;
+  text-align: left;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #3b3b3b;
+}

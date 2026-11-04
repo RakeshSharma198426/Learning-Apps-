@@ -1,0 +1,216 @@
+/* src/styles/base/_typography.scss */
+@use "../abstracts/__abstracts-dir" as *;
+
+.text-montserrat-9-regular {
+  font-family: $font-families-primary;
+  font-weight: $font-weights-regular; // 500
+  font-size: $font-sizes-20;
+  line-height: 130%;
+  letter-spacing: 0;
+}
+
+.text-montserrat-10-regular {
+  font-family: $font-families-primary;
+  font-weight: $font-weights-regular; // 500
+  font-size: $font-sizes-25;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+.text-montserrat-12-regular {
+  font-family: $font-families-primary;
+  font-weight: $font-weights-regular; // 500
+  font-size: $font-sizes-50; //12px
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+.text-montserrat-12-regular-line {
+  font-family: $font-families-primary;
+  font-weight: $font-weights-regular; // 400
+  font-size: $font-sizes-50; //12px
+  line-height: $line-heights-text-50; //16px
+  letter-spacing: 0;
+}
+
+.text-montserrat-14-regular {
+  font-family: $font-families-primary;
+  font-weight: $font-weights-regular; // 400
+  font-size: $font-sizes-75; // 14px
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+.text-montserrat-10-medium {
+  font-family: $font-families-primary;
+  font-weight: $font-weights-medium; // 500
+  font-size: $font-sizes-25; // 10px
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+.text-montserrat-12-medium {
+  font-family: $font-families-primary;
+  font-weight: $font-weights-medium; // 500
+  font-size: $font-sizes-50; //12px
+  line-height: $line-heights-text-300; //24px
+  letter-spacing: 0;
+}
+
+.text-montserrat-12-medium-line {
+  font-family: $font-families-primary;
+  font-weight: $font-weights-medium; // 500
+  font-size: $font-sizes-50; //12px
+  line-height: $line-heights-text-50; //16px
+  letter-spacing: 0;
+}
+
+.text-montserrat-14-medium {
+  font-family: $font-families-primary;
+  font-weight: $font-weights-medium; // 500
+  font-size: $font-sizes-75; // 14px
+  line-height: $line-heights-text-75; // 18px
+  letter-spacing: 0;
+}
+
+.text-montserrat-14-medium-line {
+  font-family: $font-families-primary;
+  font-weight: $font-weights-medium; // 500
+  font-size: $font-sizes-75; //14px
+  line-height: $line-heights-text-200; //16px
+  letter-spacing: 0;
+}
+
+.text-montserrat-16-medium {
+  font-family: $font-families-primary;
+  font-weight: $font-weights-medium; // 500
+  font-size: $font-sizes-100;
+  line-height: $line-heights-text-100;
+  letter-spacing: 0;
+}
+
+.text-montserrat-16-semi-bold {
+  font-family: $font-families-primary;
+  font-weight: $font-weights-semi-bold; // 600
+  font-size: $font-sizes-100;
+  line-height: $line-heights-text-100;
+  letter-spacing: 0;
+}
+
+.text-montserrat-16-medium-line {
+  font-family: $font-families-primary;
+  font-weight: $font-weights-medium; // 500
+  font-size: $font-sizes-100;
+  line-height: $line-heights-text-75;
+  letter-spacing: 0;
+}
+
+.text-montserrat-14-bold {
+  font-family: $font-families-primary;
+  font-weight: $font-weights-bold; // 700
+  font-size: $font-sizes-75; // 14px
+  line-height: $line-heights-text-50; // 18px
+  letter-spacing: 0 !important;
+}
+
+.text-montserrat-14-semi-bold {
+  font-family: $font-families-primary;
+  font-weight: $font-weights-semi-bold; // 600
+  font-size: $font-sizes-75; // 14px
+  line-height: 130%; // Custom line height if needed
+  letter-spacing: 0;
+}
+
+.text-montserrat-18-semi-bold {
+  font-family: $font-families-primary;
+  font-weight: $font-weights-semi-bold; // 600
+  font-size: $font-sizes-200;
+  line-height: 130%; // Custom line height if needed
+  letter-spacing: 0;
+}
+
+.text-montserrat-20-semi-bold {
+  font-family: $font-families-primary;
+  font-weight: $font-weights-semi-bold; // 600
+  font-size: $font-sizes-300;
+  line-height: $line-height-text-100-percent; // Custom line height if needed
+  letter-spacing: 0;
+}
+
+.text-montserrat-36-semi-bold {
+  font-family: $font-families-primary;
+  font-weight: $font-weights-semi-bold;
+  font-size: $font-sizes-700;
+  line-height: $line-height-text-100-percent; // Custom line height if needed
+  letter-spacing: 0;
+}
+
+.text-montserrat-12-bold {
+  font-family: $font-families-primary;
+  font-weight: $font-weights-bold; // 700
+  font-size: $font-sizes-50; //12px
+  line-height: $line-heights-text-300; //24px
+  letter-spacing: 0;
+}
+.text-montserrat-12-bold-16-line {
+  font-family: $font-families-primary;
+  font-weight: $font-weights-bold; // 700
+  font-size: $font-sizes-50; //12px
+  line-height: $line-heights-text-50; //16px
+  letter-spacing: 0;
+}
+.text-montserrat-24-bold {
+  font-family: $font-families-primary;
+  font-weight: $font-weights-bold; // 700
+  font-size: $font-sizes-500;
+  line-height: $line-height-text-100-percent; // Custom line height if needed
+  letter-spacing: 0;
+}
+
+.text-montserrat-16-bold {
+  font-family: $font-families-primary;
+  font-weight: $font-weights-bold; // 700
+  font-size: $font-sizes-100;
+  line-height: $line-height-text-100-percent; // Custom line height if needed
+  letter-spacing: 0;
+}
+
+.text-montserrat-32-bold {
+  font-family: $font-families-primary;
+  font-weight: $font-weights-bold; // 700
+  font-size: $font-sizes-700;
+  line-height: $line-height-text-100-percent;
+  letter-spacing: 0;
+}
+
+.text-lora-32-semi-bold {
+  font-family: $font-families-secondary;
+  font-weight: $font-weights-semi-bold; // 600
+  font-size: $font-sizes-700; //32px
+  line-height: $line-height-text-100-percent; // 100%
+  letter-spacing: 0;
+}
+
+.text-lora-36-medium-bold {
+  font-family: $font-families-secondary;
+  font-weight: $font-weights-medium; // 700
+  font-size: $font-sizes-800; //36px
+  line-height: $line-height-text-100-percent; // 100%
+  letter-spacing: 0;
+}
+
+.text-lora-36-bold {
+  font-family: $font-families-secondary;
+  font-weight: $font-weights-bold; // 700
+  font-size: $font-sizes-800; //36px
+  line-height: $line-height-text-100-percent; // 100%
+  letter-spacing: 0;
+}
+
+.text-lora-24-bold {
+  font-family: $font-families-secondary;
+  font-weight: $font-weights-bold; // 700
+  font-size: $font-sizes-500; //24px
+  line-height: $line-height-text-36px; // 36px
+  letter-spacing: 0;
+}

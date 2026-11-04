@@ -1,0 +1,87 @@
+.projectsMainContainer {
+  padding: 20px 72px 20px 20px;
+  background-color: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 72px);
+
+  &-projects-error-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(470px, 1fr));
+  gap: 24px;
+}
+
+.projects > .tile {
+  width: 100%;
+  flex: none;
+}
+
+.projects-pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.tabs-sort-container {
+  display: flex;
+  justify-content: space-between;
+  /* tabs left, sort right */
+  align-items: center;
+  margin-bottom: 1rem;
+  /* space below */
+  width: 100%;
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tabs button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #d6d6d6;
+  background-color: white;
+  border-radius: 40px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  font-family: "Montserrat", helvetica;
+}
+
+.tabs button.active {
+  background-color: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+.sort-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sort-label {
+  font-family: "Montserrat", helvetica;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  color: #000;
+}
+
+.seperator-label {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -2%;
+  color: #c5c7c7;
+}

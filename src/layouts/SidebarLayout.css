@@ -1,0 +1,24 @@
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--color-secondary);
+}
+
+.layout-main {
+  display: flex;
+  flex-grow: 1;
+  background-color: var(--color-secondary);
+  overflow: auto; /* optional, if content may overflow */
+}
+
+.layout-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: var(--color-secondary);
+}
+
+.layout-main > .sidebar {
+  width: 380px;
+}

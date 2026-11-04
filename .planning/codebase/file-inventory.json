@@ -1,0 +1,334 @@
+{
+  "root": "C:\\Wiplif Project\\Frontend\\wipfli-genai-frd-frontend",
+  "generated": "2026-11-04T06:00:48.341454+00:00",
+  "total_files": 32,
+  "total_tokens": 2817,
+  "by_extension": [
+    {
+      "ext": ".md",
+      "count": 3,
+      "tokens": 972
+    },
+    {
+      "ext": ".js",
+      "count": 16,
+      "tokens": 606
+    },
+    {
+      "ext": ".json",
+      "count": 3,
+      "tokens": 579
+    },
+    {
+      "ext": ".css",
+      "count": 8,
+      "tokens": 468
+    },
+    {
+      "ext": ".yml",
+      "count": 1,
+      "tokens": 171
+    },
+    {
+      "ext": ".html",
+      "count": 1,
+      "tokens": 21
+    }
+  ],
+  "top_20_by_tokens": [
+    {
+      "path": "AGENTS.md",
+      "tokens": 650,
+      "size_bytes": 6892
+    },
+    {
+      "path": "src/__mocks__/mockProjects.json",
+      "tokens": 489,
+      "size_bytes": 11739
+    },
+    {
+      "path": "CLAUDE.md",
+      "tokens": 262,
+      "size_bytes": 2524
+    },
+    {
+      "path": "src/components/Button/RoundedButton.css",
+      "tokens": 201,
+      "size_bytes": 3297
+    },
+    {
+      "path": "azure-pipelines.yml",
+      "tokens": 171,
+      "size_bytes": 2785
+    },
+    {
+      "path": "src/components/Sidebar/Sidebar.css",
+      "tokens": 105,
+      "size_bytes": 1305
+    },
+    {
+      "path": "package.json",
+      "tokens": 84,
+      "size_bytes": 1498
+    },
+    {
+      "path": "src/specs/components/projectsSlice.test.js",
+      "tokens": 84,
+      "size_bytes": 1410
+    },
+    {
+      "path": "src/components/Sorting/SortByModal.css",
+      "tokens": 74,
+      "size_bytes": 898
+    },
+    {
+      "path": "README.md",
+      "tokens": 60,
+      "size_bytes": 868
+    },
+    {
+      "path": "playwright.config.js",
+      "tokens": 57,
+      "size_bytes": 752
+    },
+    {
+      "path": "vite.config.js",
+      "tokens": 55,
+      "size_bytes": 746
+    },
+    {
+      "path": "eslint.config.js",
+      "tokens": 54,
+      "size_bytes": 877
+    },
+    {
+      "path": "src/utils/auth.js",
+      "tokens": 52,
+      "size_bytes": 867
+    },
+    {
+      "path": "scripts/ado-setup.js",
+      "tokens": 38,
+      "size_bytes": 496
+    },
+    {
+      "path": "scripts/build-knowledge-graph.js",
+      "tokens": 38,
+      "size_bytes": 520
+    },
+    {
+      "path": "scripts/jira-setup.js",
+      "tokens": 38,
+      "size_bytes": 498
+    },
+    {
+      "path": "scripts/learn-codebase.js",
+      "tokens": 38,
+      "size_bytes": 506
+    },
+    {
+      "path": "src/layouts/SidebarLayout.css",
+      "tokens": 35,
+      "size_bytes": 476
+    },
+    {
+      "path": "tests/e2e/smoke.spec.js",
+      "tokens": 34,
+      "size_bytes": 362
+    }
+  ],
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "ext": ".md",
+      "size_bytes": 6892,
+      "tokens": 650
+    },
+    {
+      "path": "src/__mocks__/mockProjects.json",
+      "ext": ".json",
+      "size_bytes": 11739,
+      "tokens": 489
+    },
+    {
+      "path": "CLAUDE.md",
+      "ext": ".md",
+      "size_bytes": 2524,
+      "tokens": 262
+    },
+    {
+      "path": "src/components/Button/RoundedButton.css",
+      "ext": ".css",
+      "size_bytes": 3297,
+      "tokens": 201
+    },
+    {
+      "path": "azure-pipelines.yml",
+      "ext": ".yml",
+      "size_bytes": 2785,
+      "tokens": 171
+    },
+    {
+      "path": "src/components/Sidebar/Sidebar.css",
+      "ext": ".css",
+      "size_bytes": 1305,
+      "tokens": 105
+    },
+    {
+      "path": "package.json",
+      "ext": ".json",
+      "size_bytes": 1498,
+      "tokens": 84
+    },
+    {
+      "path": "src/specs/components/projectsSlice.test.js",
+      "ext": ".js",
+      "size_bytes": 1410,
+      "tokens": 84
+    },
+    {
+      "path": "src/components/Sorting/SortByModal.css",
+      "ext": ".css",
+      "size_bytes": 898,
+      "tokens": 74
+    },
+    {
+      "path": "README.md",
+      "ext": ".md",
+      "size_bytes": 868,
+      "tokens": 60
+    },
+    {
+      "path": "playwright.config.js",
+      "ext": ".js",
+      "size_bytes": 752,
+      "tokens": 57
+    },
+    {
+      "path": "vite.config.js",
+      "ext": ".js",
+      "size_bytes": 746,
+      "tokens": 55
+    },
+    {
+      "path": "eslint.config.js",
+      "ext": ".js",
+      "size_bytes": 877,
+      "tokens": 54
+    },
+    {
+      "path": "src/utils/auth.js",
+      "ext": ".js",
+      "size_bytes": 867,
+      "tokens": 52
+    },
+    {
+      "path": "scripts/ado-setup.js",
+      "ext": ".js",
+      "size_bytes": 496,
+      "tokens": 38
+    },
+    {
+      "path": "scripts/build-knowledge-graph.js",
+      "ext": ".js",
+      "size_bytes": 520,
+      "tokens": 38
+    },
+    {
+      "path": "scripts/jira-setup.js",
+      "ext": ".js",
+      "size_bytes": 498,
+      "tokens": 38
+    },
+    {
+      "path": "scripts/learn-codebase.js",
+      "ext": ".js",
+      "size_bytes": 506,
+      "tokens": 38
+    },
+    {
+      "path": "src/layouts/SidebarLayout.css",
+      "ext": ".css",
+      "size_bytes": 476,
+      "tokens": 35
+    },
+    {
+      "path": "tests/e2e/smoke.spec.js",
+      "ext": ".js",
+      "size_bytes": 362,
+      "tokens": 34
+    },
+    {
+      "path": "src/constants/constant.js",
+      "ext": ".js",
+      "size_bytes": 287,
+      "tokens": 30
+    },
+    {
+      "path": "src/specs/common/globalStyles.test.js",
+      "ext": ".js",
+      "size_bytes": 578,
+      "tokens": 30
+    },
+    {
+      "path": "src/styles/globalStyles.js",
+      "ext": ".js",
+      "size_bytes": 353,
+      "tokens": 24
+    },
+    {
+      "path": "index.html",
+      "ext": ".html",
+      "size_bytes": 381,
+      "tokens": 21
+    },
+    {
+      "path": "src/components/Cards/ProjectSummaryCard.css",
+      "ext": ".css",
+      "size_bytes": 213,
+      "tokens": 20
+    },
+    {
+      "path": "src/specs/routes/path.test.js",
+      "ext": ".js",
+      "size_bytes": 439,
+      "tokens": 18
+    },
+    {
+      "path": "src/components/Cards/StatCard.css",
+      "ext": ".css",
+      "size_bytes": 171,
+      "tokens": 17
+    },
+    {
+      "path": "src/routes/path.js",
+      "ext": ".js",
+      "size_bytes": 219,
+      "tokens": 15
+    },
+    {
+      "path": "src/components/Cards/ProjectSummaryCardList.css",
+      "ext": ".css",
+      "size_bytes": 84,
+      "tokens": 8
+    },
+    {
+      "path": "src/components/Cards/StatCardList.css",
+      "ext": ".css",
+      "size_bytes": 94,
+      "tokens": 8
+    },
+    {
+      "path": "staticwebapp.config.json",
+      "ext": ".json",
+      "size_bytes": 96,
+      "tokens": 6
+    },
+    {
+      "path": "src/setupTests.js",
+      "ext": ".js",
+      "size_bytes": 37,
+      "tokens": 1
+    }
+  ]
+}

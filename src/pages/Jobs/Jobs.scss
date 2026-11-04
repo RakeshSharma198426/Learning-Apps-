@@ -1,0 +1,55 @@
+.jobs-listing {
+  padding: 47px 72px 24px 24px;
+  background-color: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 24px);
+
+  .jobs-listing-error-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tabs {
+    margin-bottom: 24px;
+  }
+
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+
+    .sort-label {
+      font-family: "Montserrat", helvetica;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 32px;
+      color: #000;
+    }
+
+    .seperator-label {
+      font-family: Montserrat;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: -2%;
+      color: #c5c7c7;
+    }
+  }
+}
+.sort-box {
+  display: flex;
+  align-items: center;
+}
+
+.refresh-button-wrapper {
+  margin-right: 10px;
+}
+
+.jobs-listing-table {
+  height: 58vh;
+  overflow-y: auto;
+}

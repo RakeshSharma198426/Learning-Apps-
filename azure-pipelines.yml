@@ -1,0 +1,78 @@
+trigger:
+  branches:
+    include:
+      - develop
+
+pool:
+  name: "pool-frd-dev-westus"
+
+variables:
+  - name: npm_config_registry
+    value: "https://registry.npmjs.org/"
+  - group: FEDevEnv
+
+steps:
+  # Install Node.js and npm dependencies
+  - task: NodeTool@0
+    inputs:
+      versionSource: "spec"
+      versionSpec: "18.x" # Use a more recent version of Node.js
+      checkLatest: false
+
+  # Step 2: Checkout the repository
+  - checkout: self # Check out the repository (the source code for the React app)
+
+  # Install the npm dependencies
+  - script: |
+      npm install
+    displayName: "Install Dependencies"
+
+  # Create env production file
+  - script: |
+      echo "Creating .env.production file"
+      echo "VITE_API_PROXY_TARGET=$VITE_API_PROXY_TARGET" >> .env.production
+      echo "VITE_API_BASE_URL=$VITE_API_BASE_URL" >> .env.production
+      echo "VITE_API_OCP_APIM_SUBSCRIPTION_KEY=$VITE_API_OCP_APIM_SUBSCRIPTION_KEY" >> .env.production
+      echo "VITE_MSAL_CLIENT_ID=$VITE_MSAL_CLIENT_ID" >> .env.production
+      echo "VITE_MSAL_TENANT_ID=$VITE_MSAL_TENANT_ID" >> .env.production
+      echo "VITE_REDIRECT_URI=$VITE_REDIRECT_URI" >> .env.production
+      echo "VITE_POST_LOGOUT_REDIRECT_URI=$VITE_POST_LOGOUT_REDIRECT_URI" >> .env.production
+      echo "VITE_MSAL_ROLE=$VITE_MSAL_ROLE" >> .env.production
+      echo "VITE_MSAL_GROUP=$VITE_MSAL_GROUP" >> .env.production
+      echo "VITE_MSAL_API_SCOPE=$VITE_MSAL_API_SCOPE" >> .env.production
+    displayName: "Create .env.production"
+
+  # Build the React application
+  - script: |
+      npm run build
+    displayName: "Build React Application"
+
+  #  - script: |
+  #      mkdir -p $(Build.ArtifactStagingDirectory)/build  # Ensure build directory exists
+  #      cp ./staticwebapp.config.json $(Build.ArtifactStagingDirectory)/build/staticwebapp.config.json  # Copy config
+  #    displayName: "Copy staticwebapp.config.json to build directory"
+
+  - script: |
+      mkdir -p $(Build.SourcesDirectory)/build
+      cp ./staticwebapp.config.json $(Build.SourcesDirectory)/build/staticwebapp.config.json
+    displayName: "Copy staticwebapp.config.json to build directory"
+
+  #  - task: CopyFiles@2
+  #    inputs:
+  #      SourceFolder: "$(System.DefaultWorkingDirectory)/build"
+  #      Contents: "**"
+  #      TargetFolder: "$(Build.ArtifactStagingDirectory)"
+  #      OverWrite: true
+
+  - task: CopyFiles@2
+    inputs:
+      SourceFolder: "$(Build.SourcesDirectory)/build"
+      Contents: "**"
+      TargetFolder: "$(Build.ArtifactStagingDirectory)"
+      OverWrite: true
+
+  - task: PublishBuildArtifacts@1
+    inputs:
+      PathtoPublish: "$(Build.ArtifactStagingDirectory)"
+      ArtifactName: "reactjs"
+      publishLocation: "Container"

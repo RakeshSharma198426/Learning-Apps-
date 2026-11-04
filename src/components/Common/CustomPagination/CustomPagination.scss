@@ -1,0 +1,86 @@
+.custom-pagination-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 32px 0;
+    width: 100%;
+
+    .cursor-pointer {
+        cursor: pointer;
+    }
+
+    .cursor-not-allowed {
+        cursor: not-allowed;
+    }
+
+    .grey-text {
+        color: #7B7B7B;
+    }
+
+    .blue-text-icon {
+        color: #0050FF;
+    }
+
+    .grey-icon {
+        color: #9D9D9D;
+    }
+
+    .arrow-icon {
+        font-size: 12px;
+    }
+
+
+    &-previous {
+        display: flex;
+        align-items: center;
+        flex: 0 0 auto;
+
+        /* fix width to content */
+        span {
+            margin-left: 8px
+        }
+    }
+
+    &-numbers {
+        display: flex;
+        align-items: center;
+        flex: 1 1 auto;
+        /* allow this section to grow and fill space */
+        justify-content: center;
+        /* center the numbers */
+        gap: 16px;
+
+
+        div {
+            margin: 0 16px;
+            cursor: pointer;
+        }
+
+        .active-numbers {
+            font-family: "Montserrat";
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: #262626;
+        }
+
+        .inactive-numbers {
+            font-family: "Montserrat";
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 20px;
+            color: #9D9D9D;
+        }
+
+    }
+
+    &-next {
+        display: flex;
+        align-items: center;
+        flex: 0 0 auto;
+
+        span {
+            margin-right: 8px;
+        }
+    }
+}

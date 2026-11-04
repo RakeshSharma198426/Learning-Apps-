@@ -1,0 +1,57 @@
+@forward "./fonts/montserrat";
+@forward "./fonts/lora";
+
+$font-families-primary: "Montserrat", helvetica;
+$font-families-secondary: "Lora", helvetica;
+
+$font-sizes-1000: 58px;
+$font-sizes-900: 56px;
+$font-sizes-800: 36px;
+$font-sizes-700: 32px;
+$font-sizes-600: 26px;
+$font-sizes-500: 24px;
+$font-sizes-400: 22px;
+$font-sizes-300: 20px;
+$font-sizes-200: 18px;
+$font-sizes-100: 16px;
+$font-sizes-75: 14px;
+$font-sizes-50: 12px;
+$font-sizes-25: 10px;
+$font-sizes-20: 9px;
+
+$font-style-italic: italic;
+$font-style-normal: normal;
+
+$font-weights-black: 900;
+$font-weights-extra-bold: 800;
+$font-weights-bold: 700;
+$font-weights-semi-bold: 600;
+$font-weights-medium: 500;
+$font-weights-regular: 400;
+
+$letter-spacing-wide: 0.02em;
+
+$line-heights-header-1000: 61px;
+$line-heights-header-800: 48px;
+$line-heights-header-700: 44px;
+$line-heights-header-650: 40px;
+$line-heights-header-600: 30px;
+$line-heights-header-500: 28px;
+$line-heights-header-400: 26px;
+$line-heights-header-300: 32px;
+$line-heights-text-400: 28px;
+$line-heights-text-300: 24px;
+$line-heights-text-200: 22px;
+$line-heights-text-100: 20px;
+$line-heights-text-75: 18px;
+$line-heights-text-50: 16px;
+$line-heights-text-25: 12px;
+$line-height-text-36px: 36px;
+
+$line-height-text-100-percent: 100%;
+
+$text-transform-uppercase: uppercase;
+
+$input-field-line-height: $line-heights-text-200;
+
+$letter-spacing-1: 0.5px;
